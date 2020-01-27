@@ -1,51 +1,53 @@
 {
-  "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
-  "hideSelection": true,
-  "hideListHeader": true,
-  "hideColumnHeader": true,
-  "rowFormatter": {
-    "elmType": "div",
-    "style": {
-      "background-color": "",
-      "float": "left",
-      "display": "flex",
-      "flex-wrap": "nowrap",
-      "flex-direction": "column",
-      "align-items": "left",
-      "justify-content": "space-around",
-      "min-width": "200px",
-      "min-height": "200px",
-      "max-width": "200px",
-      "border-radius": "2px",
-      "margin-right": "5px",
-      "margin-bottom": "5px",
-      "box-shadow": "4px 4px 8px darkgrey"
-    },
-    "attributes": {
-      "class": "sp-row-card ms-bgColor-neutralLighter"
-    },
-    "children": [
-      {
-        "elmType": "div",
-        "style": {
-          "text-align": "center",
-          "flex-basis": "100%"
-        },
-        "children": [
-          {
-            "elmType": "div",
-            "style": {
-              "color": "#4a1011",
-              "font-weight": "500",
-              "font-size": "1rem",
-              "text-align": "center",
-              "margin": "12px",
-              "word-wrap": "break-word"
-            },
-            "txtContent": "[$Title]"
-          }
-        ]
-      }
-    ]
+  "tileProps": {
+    "height": 200,
+    "width": 200,
+    "hideColumnHeader": true,
+    "hideSelection": true,
+    "formatter": {
+      "elmType": "div",
+      "style": {
+        "background-color": "",
+        "float": "left",
+        "display": "flex",
+        "flex-wrap": "nowrap",
+        "flex-direction": "column",
+        "align-items": "left",
+        "justify-content": "space-around",
+        "min-width": "200px",
+        "min-height": "200px",
+        "max-width": "200px",
+        "border-radius": "2px",
+        "margin-right": "5px",
+        "margin-bottom": "5px",
+        "box-shadow": "4px 4px 8px darkgrey"
+      },
+      "attributes": {
+        "class": "sp-row-card ms-bgColor-neutralLighter"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "text-align": "center",
+            "flex-basis": "100%"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "color": "#4a1011",
+                "font-weight": "500",
+                "font-size": "1rem",
+                "text-align": "center",
+                "margin": "12px",
+                "word-wrap": "break-word"
+              },
+              "txtContent": "[$Title]"
+            }
+          ]
+        }
+      ]
+    }
   }
 }
